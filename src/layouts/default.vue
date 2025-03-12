@@ -1,10 +1,8 @@
 <template>
     <div>
-        <Navbar />
-        <main class="pt-20">
+        <main >
             <slot />
         </main>
-        <AutoLogOut />
     </div>
 </template>
 

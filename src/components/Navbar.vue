@@ -32,63 +32,17 @@
 					<li>
 						<NuxtLink class="md:p-4 py-2 block hover:text-purple-400" to="/">Home</NuxtLink>
 					</li>
-					<li>
-						<NuxtLink class="md:p-4 py-2 block hover:text-purple-400" to="/product/electronic"
-							>Electronic</NuxtLink
-						>
-					</li>
-					<li>
-						<NuxtLink class="md:p-4 py-2 block hover:text-purple-400" to="/product/fashion"
-							>Fashion</NuxtLink
-						>
-					</li>
-					<li>
-						<NuxtLink class="md:p-4 py-2 block hover:text-purple-400" to="/product/grocery"
-							>Grocery</NuxtLink
-						>
-					</li>
+					
+					
 					<li class="p-4" @click="toggleTheme">
 						<Icon
 							:name="themeStore.theme === 'light' ? 'ri:moon-line' : 'ri:sun-line'"
 							class="text-purple-500"
 						/>
 					</li>
-					<li v-if="!authStore.getData().isAuthenticated">
-						<NuxtLink
-							class="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
-							:to="{ name: 'login' }"
-							>Sign In</NuxtLink
-						>
-					</li>
+					
 
-					<li v-else>
-						<button
-							@click="toggleDropdown"
-							class="md:p-4 py-2 block hover:text-purple-400 text-purple-500 focus:outline-none"
-						>
-							Profile
-						</button>
-						<div
-							v-if="isDropdownOpen"
-							class="absolute right-0 mt-2 mr-12 md:mr-6 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10"
-						>
-							<NuxtLink to="/user" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-								Account
-							</NuxtLink>
-							<NuxtLink to="/user/cart" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-								Cart
-							</NuxtLink>
-							<NuxtLink to="/user/order" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-								Order
-							</NuxtLink>
-							<button
-								@click="logout"
-								class="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-full text-left"
-							>
-								Logout
-							</button>
-						</div>
-					</li>
+					
 				</ul>
 			</div>
 		</nav>

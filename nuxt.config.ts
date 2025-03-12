@@ -29,7 +29,7 @@ for (const key in process.env) {
 
 export default defineNuxtConfig({
 	devServer: {
-		port: 5000,
+		port: 3003,
 	},
 	ssr: true,
 	compatibilityDate: '2024-04-03',
