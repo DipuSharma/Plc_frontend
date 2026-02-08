@@ -24,7 +24,7 @@
 	"dependencies": {
 		"@mdi/font": "^7.4.47",
 		"@mdi/js": "^7.4.47",
-		"@pinia/nuxt": "^0.5.3",
+		"@pinia/nuxt": "^0.11.3",
 		"axios": "^1.7.3",
 		"chart.js": "^4.4.4",
 		"chartjs-plugin-datalabels": "^2.2.0",
